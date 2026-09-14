@@ -2,16 +2,6 @@
 
 A small C++ library management system, built primarily as a learning exercise to practice core C++ fundamentals: raw pointers, references, manual memory management, polymorphism, and ownership design. The "library" domain is the vehicle — the real goal was to get hands-on with the mechanics that `std::vector`, `std::unique_ptr`, and friends normally hide.
 
-## Why this project
-
-I wanted something more concrete than isolated pointer exercises, but small enough to finish in a couple of focused sessions. A library system gave a natural set of ownership questions to answer explicitly rather than default around:
-
-- Does a collection own the objects it holds, or just reference them?
-- When should something be a pointer, a reference, or a plain value?
-- What happens to memory when a container resizes, copies, or goes out of scope?
-
-Every design decision below was made deliberately, not by default — that's the actual point of the project.
-
 ## Features
 
 - Add, remove, and list catalog items (`Book`, extensible via polymorphism to other `Item` types)
