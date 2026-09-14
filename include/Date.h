@@ -1,0 +1,17 @@
+#pragma once
+
+class Date
+{
+private:
+    int day;
+    int month;
+    int year;
+
+public:
+    Date();
+    Date(int day, int month, int year);
+
+    Date addDays(int days) const;
+
+    void display() const;
+};
